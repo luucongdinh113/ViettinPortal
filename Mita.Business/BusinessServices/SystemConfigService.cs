@@ -1,12 +1,7 @@
-﻿using log4net;
-using Mita.Business.Base;
+﻿using Mita.Business.Base;
 using Mita.Business.Model;
-using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
-using System.Reflection;
-using System.Text;
 
 namespace Mita.Business.BusinessServices
 {
@@ -76,7 +71,7 @@ namespace Mita.Business.BusinessServices
             Dictionary<string, string> result = new Dictionary<string, string>();
             using (var context = MitaContext.GetContextInstance())
             {
-                
+
                 var listdbItem = context.SystemConfigs.ToList();
                 foreach (var item in listdbItem)
                 {

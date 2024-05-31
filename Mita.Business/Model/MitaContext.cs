@@ -1,9 +1,6 @@
 ﻿using log4net;
 using Microsoft.EntityFrameworkCore;
-using Mita.Business.Helpers;
 using System;
-using System.Data.Common;
-using System.Linq;
 
 namespace Mita.Business.Model
 {
@@ -71,7 +68,7 @@ namespace Mita.Business.Model
         private MitaContext(string connectionString) : base(GetOptions(connectionString))
         {
 
-            
+
         }
 
         private static DbContextOptions GetOptions(string connectionString)

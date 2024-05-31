@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace ViettinPortal.Models.DataModel
+﻿namespace ViettinPortal.Models.DataModel
 {
     public class UserModel
     {

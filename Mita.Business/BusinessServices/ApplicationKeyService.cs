@@ -1,7 +1,5 @@
 ﻿using EncryptionLibrary;
 using Mita.Business.Base;
-using Mita.Business.BusinessEnum;
-using Mita.Business.BusinessObjects;
 using Mita.Business.Helpers;
 using Mita.Business.Model;
 using System;
@@ -89,8 +87,8 @@ namespace Mita.Business.BusinessServices
             var selectedItem = GetApplicationKey(applicationId);
             if (selectedItem != null)
             {
-                return EncryptionUtils.EncryptData(mess, 
-                    CommonUtils.Decrypt(selectedItem.ApplicationName), 
+                return EncryptionUtils.EncryptData(mess,
+                    CommonUtils.Decrypt(selectedItem.ApplicationName),
                     CommonUtils.Decrypt(selectedItem.ApplicationId));
             }
 
@@ -99,7 +97,7 @@ namespace Mita.Business.BusinessServices
 
         public void SyncNewApp(ApplicationKeyInfo application)
         {
-            if(application == null )
+            if (application == null)
             {
                 throw new ArgumentNullException("application");
             }

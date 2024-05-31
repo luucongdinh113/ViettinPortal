@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Mita.Business.BusinessEnum;
+﻿using Mita.Business.BusinessEnum;
 using Mita.Business.Helpers;
+using System;
 
 namespace Mita.Business.BusinessObjects
 {

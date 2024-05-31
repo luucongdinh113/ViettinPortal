@@ -1,12 +1,12 @@
-﻿using System;
-using System.Reflection;
-using System.Runtime.Serialization;
-using log4net;
+﻿using log4net;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Mita.Business.BusinessObjects;
 using Mita.Business.BusinessServices;
 using Mita.Business.Model;
+using System;
+using System.Reflection;
+using System.Runtime.Serialization;
 
 namespace ViettinPortal.Controllers
 {
@@ -108,7 +108,7 @@ namespace ViettinPortal.Controllers
 
         [AllowAnonymous]
         [HttpPost()]
-        public IActionResult UpdateResultDepartmentMonthStat([FromBody]ResultDepartmentMonthStatRequest request)
+        public IActionResult UpdateResultDepartmentMonthStat([FromBody] ResultDepartmentMonthStatRequest request)
         {
             try
             {
@@ -154,7 +154,7 @@ namespace ViettinPortal.Controllers
 
         [AllowAnonymous]
         [HttpPost()]
-        public IActionResult UpdateResultInstrumentMonthStat([FromBody]ResultInstrumentMonthStatRequest request)
+        public IActionResult UpdateResultInstrumentMonthStat([FromBody] ResultInstrumentMonthStatRequest request)
         {
             try
             {
@@ -200,7 +200,7 @@ namespace ViettinPortal.Controllers
 
         [AllowAnonymous]
         [HttpPost()]
-        public IActionResult UpdateResultInstrumentMonthCombineStat([FromBody]ResultInstrumentMonthStatRequest request)
+        public IActionResult UpdateResultInstrumentMonthCombineStat([FromBody] ResultInstrumentMonthStatRequest request)
         {
             try
             {
@@ -246,7 +246,7 @@ namespace ViettinPortal.Controllers
 
         [AllowAnonymous]
         [HttpPost()]
-        public IActionResult UpdateResultMonthStat([FromBody]ResultMonthStatRequest request)
+        public IActionResult UpdateResultMonthStat([FromBody] ResultMonthStatRequest request)
         {
             try
             {
@@ -290,7 +290,7 @@ namespace ViettinPortal.Controllers
 
         [AllowAnonymous]
         [HttpPost()]
-        public IActionResult UpdatePatientMonthStat([FromBody]PatientMonthStatRequest request)
+        public IActionResult UpdatePatientMonthStat([FromBody] PatientMonthStatRequest request)
         {
             try
             {
@@ -332,7 +332,7 @@ namespace ViettinPortal.Controllers
 
         [AllowAnonymous]
         [HttpPost()]
-        public IActionResult UpdateMaintenanceBasic([FromBody]MaintenanceBasicRequest request)
+        public IActionResult UpdateMaintenanceBasic([FromBody] MaintenanceBasicRequest request)
         {
             try
             {
@@ -373,7 +373,7 @@ namespace ViettinPortal.Controllers
 
         [AllowAnonymous]
         [HttpPost()]
-        public IActionResult TestConnection([FromBody]TestConnectionRequest request)
+        public IActionResult TestConnection([FromBody] TestConnectionRequest request)
         {
             try
             {
@@ -409,7 +409,7 @@ namespace ViettinPortal.Controllers
 
         [AllowAnonymous]
         [HttpPost()]
-        public IActionResult ReportError([FromBody]ReportErrorRequest request)
+        public IActionResult ReportError([FromBody] ReportErrorRequest request)
         {
             try
             {

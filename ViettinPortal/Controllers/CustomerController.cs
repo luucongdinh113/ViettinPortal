@@ -1,32 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Globalization;
-using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Reflection;
-using System.Security.Claims;
-using System.Security.Principal;
-using System.Text;
-using System.Threading.Tasks;
-using EncryptionLibrary;
-using log4net;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using log4net;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
-using Mita.Business.BusinessEnum;
 using Mita.Business.BusinessObjects;
 using Mita.Business.BusinessServices;
-using Mita.Business.BusinessServices.Config;
-using Mita.Business.Helpers;
-using MitaInternal;
-using MitaInternal.Models.AccountViewModels;
+using System;
+using System.Reflection;
 
 namespace ViettinPortal.Controllers
 {
@@ -56,7 +34,7 @@ namespace ViettinPortal.Controllers
             public Guid SysId { get; set; }
         }
 
-        public IActionResult AddCustomer([FromBody]AddCustomerRequest request)
+        public IActionResult AddCustomer([FromBody] AddCustomerRequest request)
         {
             try
             {
@@ -85,7 +63,7 @@ namespace ViettinPortal.Controllers
             }
         }
 
-        public IActionResult DeleteCustomer([FromBody]DeleteCustomerRequest request)
+        public IActionResult DeleteCustomer([FromBody] DeleteCustomerRequest request)
         {
             try
             {
@@ -109,7 +87,7 @@ namespace ViettinPortal.Controllers
         }
 
         [HttpPost()]
-        public IActionResult GetCustomerList([FromBody]GetCustomerListRequest request)
+        public IActionResult GetCustomerList([FromBody] GetCustomerListRequest request)
         {
             try
             {

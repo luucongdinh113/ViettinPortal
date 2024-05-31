@@ -2,7 +2,6 @@
 using Mita.Business.BusinessServices;
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Globalization;
 using System.Reflection;
 using System.Threading;

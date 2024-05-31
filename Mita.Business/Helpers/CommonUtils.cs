@@ -1,14 +1,14 @@
-﻿using System.IO;
-using System.Security.Cryptography;
+﻿using Mita.Business.BusinessEnum;
+using Mita.Business.BusinessObjects;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Reflection;
+using System.Security.Cryptography;
 using System.Text;
-using Mita.Business.BusinessEnum;
-using System.Xml.Serialization;
 using System.Xml;
-using Mita.Business.BusinessObjects;
+using System.Xml.Serialization;
 //using Spring.Context.Support;
 
 namespace Mita.Business.Helpers
@@ -28,13 +28,13 @@ namespace Mita.Business.Helpers
             {
                 return attributes[0].Description;
             }
-            
+
             return value.ToString();
         }
 
         public static T GetEnumFromValue<T>(string value)
         {
-            return (T)Enum.Parse(typeof (T), value);
+            return (T)Enum.Parse(typeof(T), value);
         }
 
         public static List<UserRightCode> GetListDefaultUserRightCode()
@@ -106,7 +106,7 @@ namespace Mita.Business.Helpers
         public static string GetErrorMessage(BusinessException businessException)
         {
             string errorMessage = string.Empty;
-            if(businessException.ErrorParams != null)
+            if (businessException.ErrorParams != null)
             {
                 errorMessage = String.Format(GetEnumDescription(businessException.ErrorCode), businessException.ErrorParams);
             }
@@ -114,7 +114,7 @@ namespace Mita.Business.Helpers
             {
                 errorMessage = String.Format(GetEnumDescription(businessException.ErrorCode));
             }
-            
+
             return errorMessage;
         }
 

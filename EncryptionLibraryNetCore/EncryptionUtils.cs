@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Security.Cryptography;
 using System.IO;
+using System.Linq;
 using System.Reflection;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace EncryptionLibrary
 {
@@ -123,7 +122,7 @@ namespace EncryptionLibrary
             string temp = sb.ToString();
             StringBuilder result = new StringBuilder();
             int indexStr = 0;
-            while(indexStr < temp.Length)
+            while (indexStr < temp.Length)
             {
                 if (indexStr + 6 < temp.Length)
                 {

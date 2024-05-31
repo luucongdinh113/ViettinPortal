@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Mita.Business.Helpers
+﻿namespace Mita.Business.Helpers
 {
     public class CommonConstant
     {
         public const string ApplicationName = "ViettinPortal";
 
-        public const string ApplicationId = "ViettinPortal.2019.05";
+        public const string ApplicationId = "ViettinPortal.2024.05.31 09:00:00.000 PM";
 
         public const string SystemAdmin = "sysadmin";
 
@@ -27,7 +21,7 @@ namespace Mita.Business.Helpers
         public const string NumberRoundingDisplay = "0";
 
         public const int ExportWarningThreshold = 3;
-        
+
         public const int MaxRowsReturn = 200;
     }
 }

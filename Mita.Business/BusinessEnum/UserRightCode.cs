@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace Mita.Business.BusinessEnum
 {
@@ -13,13 +8,13 @@ namespace Mita.Business.BusinessEnum
         /// "Đăng nhập"
         /// </summary>
         [Description("Đăng nhập")]
-        R00100 = 100, 
+        R00100 = 100,
 
         /// <summary>
         /// Tự thay đổi mật khẩu
         /// </summary>
         [Description("Tự thay đổi mật khẩu")]
-        R00101 = 101, 
+        R00101 = 101,
 
         /// <summary>
         /// Quản lý user
@@ -31,19 +26,19 @@ namespace Mita.Business.BusinessEnum
         /// Reset mật khẩu user
         /// </summary>
         [Description("Reset mật khẩu user")]
-        R00201 = 201, 
+        R00201 = 201,
 
         /// <summary>
         /// Quản lý phân quyền
         /// </summary>
         [Description("Quản lý phân quyền")]
-        R00202 = 202, 
+        R00202 = 202,
 
         /// <summary>
         /// Quản lý lưu trữ
         /// </summary>
         [Description("Quản lý lưu trữ")]
-        R00300, 
+        R00300,
 
         /// <summary>
         /// Tạo phiếu hủy
@@ -55,7 +50,7 @@ namespace Mita.Business.BusinessEnum
         /// Tạo phiếu hủy
         /// </summary>
         [Description("Tạo phiếu hủy")]
-        R00401, 
+        R00401,
 
         /// <summary>
         /// Tạo phiếu xuất
@@ -73,7 +68,7 @@ namespace Mita.Business.BusinessEnum
         /// Tạo phiếu xuất
         /// </summary>
         [Description("Xuất mẫu vượt ngưỡng cảnh báo")]
-        R00502, 
+        R00502,
 
         /// <summary>
         /// Quản lý mẫu
@@ -97,7 +92,7 @@ namespace Mita.Business.BusinessEnum
         /// Tái nhập đã hủy
         /// </summary>
         [Description("Ghi đè thông tin mẫu")]
-        R00603, 
+        R00603,
 
         /// <summary>
         /// Nhập mẫu vào kho
@@ -109,7 +104,7 @@ namespace Mita.Business.BusinessEnum
         /// Nhập mẫu vào kho
         /// </summary>
         [Description("Nhập mẫu vào kho")]
-        R00701, 
+        R00701,
 
         /// <summary>
         /// Thống kê

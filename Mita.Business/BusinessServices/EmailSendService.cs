@@ -25,7 +25,7 @@ namespace Mita.Business.BusinessServices
             public byte[] Content { get; set; }
         }
 
-        public void SendEmail(List<string> toAddress, string subject, string body, 
+        public void SendEmail(List<string> toAddress, string subject, string body,
             string emailUsername, string emailPassword, List<Attachment> attachments, bool isbodyHTML)
         {
             var message = new MailMessage();
@@ -72,7 +72,7 @@ namespace Mita.Business.BusinessServices
                 smtp.Send(message);
                 _logger.DebugFormat("Send mail to address: {0} successfully ! ", FormatListData(toAddress));
 
-                
+
             }
             finally
             {

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Mita.Business.Base
+﻿namespace Mita.Business.Base
 {
     public abstract class BaseSingleton<T> where T : BaseSingleton<T>, new()
     {

@@ -1,32 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Globalization;
-using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Reflection;
-using System.Security.Claims;
-using System.Security.Principal;
-using System.Text;
-using System.Threading.Tasks;
-using EncryptionLibrary;
-using log4net;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using log4net;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
 using Mita.Business.BusinessEnum;
 using Mita.Business.BusinessObjects;
 using Mita.Business.BusinessServices;
 using Mita.Business.BusinessServices.Config;
 using Mita.Business.Helpers;
-using MitaInternal;
-using MitaInternal.Models.AccountViewModels;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Globalization;
+using System.Linq;
+using System.Reflection;
 
 namespace ViettinPortal.Controllers
 {
@@ -82,7 +67,7 @@ namespace ViettinPortal.Controllers
         }
 
         [HttpPost()]
-        public IActionResult GetApplicationList([FromBody]GetApplicationListRequest request)
+        public IActionResult GetApplicationList([FromBody] GetApplicationListRequest request)
         {
             try
             {
@@ -117,7 +102,7 @@ namespace ViettinPortal.Controllers
         }
 
         [HttpPost()]
-        public IActionResult GetApplicationClientList([FromBody]GetApplicationListRequest request)
+        public IActionResult GetApplicationClientList([FromBody] GetApplicationListRequest request)
         {
             try
             {
@@ -165,7 +150,7 @@ namespace ViettinPortal.Controllers
         }
 
         [HttpPost()]
-        public IActionResult Generate([FromBody]GenerateKeyRequest generateKeyRequest)
+        public IActionResult Generate([FromBody] GenerateKeyRequest generateKeyRequest)
         {
             try
             {
@@ -212,7 +197,7 @@ Unlock code: [{serialUnlockCode}]";
         }
 
         [HttpPost()]
-        public IActionResult GenKeyInstrument([FromBody]GenerateKeyInstrumentRequest generateKeyRequest)
+        public IActionResult GenKeyInstrument([FromBody] GenerateKeyInstrumentRequest generateKeyRequest)
         {
             try
             {
@@ -264,7 +249,7 @@ Unlock code: [{serialUnlockCode}]";
         }
 
         [HttpPost()]
-        public IActionResult GenerateClient([FromBody]GenerateKeyRequest generateKeyRequest)
+        public IActionResult GenerateClient([FromBody] GenerateKeyRequest generateKeyRequest)
         {
             try
             {

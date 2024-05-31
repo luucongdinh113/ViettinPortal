@@ -1,7 +1,4 @@
-﻿using System;
-using System.Globalization;
-
-namespace WebApi.Helpers
+﻿namespace WebApi.Helpers
 {
     public class AppSettings
     {

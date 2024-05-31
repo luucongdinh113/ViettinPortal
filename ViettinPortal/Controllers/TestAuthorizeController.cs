@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace ViettinPortal.Controllers
 {
@@ -24,7 +20,7 @@ namespace ViettinPortal.Controllers
 
         [HttpPost()]
         [Authorize]
-        public IActionResult Test([FromBody]LoginViewModel model)
+        public IActionResult Test([FromBody] LoginViewModel model)
         {
             return StatusCode(StatusCodes.Status200OK);
         }

@@ -1,29 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Reflection;
-using System.Security.Claims;
-using System.Security.Principal;
-using System.Text;
-using System.Threading.Tasks;
-using log4net;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using log4net;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Mita.Business.BusinessEnum;
 using Mita.Business.BusinessObjects;
 using Mita.Business.BusinessServices;
 using Mita.Business.Helpers;
-using MitaInternal;
 using MitaInternal.Models.AccountViewModels;
+using System;
+using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
+using System.Reflection;
+using System.Security.Claims;
+using System.Text;
 //using SpecLab.Business;
 
 namespace ViettinPortal.Controllers
@@ -50,7 +39,7 @@ namespace ViettinPortal.Controllers
 
         [AllowAnonymous]
         [HttpPost()]
-        public IActionResult Authenticate([FromBody]LoginViewModel userDto)
+        public IActionResult Authenticate([FromBody] LoginViewModel userDto)
         {
             try
             {
@@ -95,7 +84,7 @@ namespace ViettinPortal.Controllers
         }
 
         [HttpPost()]
-        public IActionResult ChangePass([FromBody]ChangePassRequest request)
+        public IActionResult ChangePass([FromBody] ChangePassRequest request)
         {
             try
             {
