@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "rxjs@6.5.1",
+      "destination": "lib/rxjs/",
+      "files": [
+        "rxjs.umd.min.js"
+      ]
+    }
+  ]
+}
